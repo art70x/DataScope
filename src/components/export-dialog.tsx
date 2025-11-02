@@ -19,7 +19,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { Checkbox } from '@/components/ui/checkbox'
-import { Download, FileJson } from 'lucide-react'
+import { Download } from 'lucide-react'
 import { ParsedData } from '@/lib/data-parser'
 import { exportToPDF } from '@/lib/pdf-export'
 import { toast } from 'sonner'
@@ -31,7 +31,13 @@ interface ExportDialogProps {
   totalRows: number
 }
 
-export function ExportDialog({ data, filteredRows, searchTerm, totalRows }: ExportDialogProps) {
+interface Opts {
+  formats: 'json' | 'csv' | 'pdf'
+  size: 'a4' | 'letter'
+  orientation: 'portrait' | 'landscape'
+}
+
+export function ExportDialog({ data, filteredRows, searchTerm }: ExportDialogProps) {
   const [open, setOpen] = useState(false)
   const [exportFormat, setExportFormat] = useState<'pdf' | 'json' | 'csv'>('pdf')
   const [includeTimestamp, setIncludeTimestamp] = useState(true)
@@ -139,7 +145,7 @@ export function ExportDialog({ data, filteredRows, searchTerm, totalRows }: Expo
           {/* Format Selection */}
           <div className="space-y-2">
             <Label htmlFor="format">Export Format</Label>
-            <Select value={exportFormat} onValueChange={(value: any) => setExportFormat(value)}>
+            <Select value={exportFormat} onValueChange={(value: Opts['formats']) => setExportFormat(value)}>
               <SelectTrigger id="format">
                 <SelectValue />
               </SelectTrigger>
@@ -156,7 +162,7 @@ export function ExportDialog({ data, filteredRows, searchTerm, totalRows }: Expo
             <>
               <div className="space-y-2">
                 <Label htmlFor="pageSize">Page Size</Label>
-                <Select value={pageSize} onValueChange={(value: any) => setPageSize(value)}>
+                <Select value={pageSize} onValueChange={(value: Opts['size']) => setPageSize(value)}>
                   <SelectTrigger id="pageSize">
                     <SelectValue />
                   </SelectTrigger>
@@ -169,7 +175,7 @@ export function ExportDialog({ data, filteredRows, searchTerm, totalRows }: Expo
 
               <div className="space-y-2">
                 <Label htmlFor="orientation">Orientation</Label>
-                <Select value={orientation} onValueChange={(value: any) => setOrientation(value)}>
+                <Select value={orientation} onValueChange={(value: Opts['orientation']) => setOrientation(value)}>
                   <SelectTrigger id="orientation">
                     <SelectValue />
                   </SelectTrigger>

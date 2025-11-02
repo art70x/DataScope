@@ -96,7 +96,7 @@ export function parseJSON(content: string, fileName: string): ParsedData {
   try {
     data = JSON.parse(content)
   } catch (error) {
-    throw new Error('Invalid JSON format')
+    throw new Error('Invalid JSON format' + `\nERR: ${error}`)
   }
 
   let rows: Record<string, unknown>[] = []

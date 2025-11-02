@@ -6,15 +6,10 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { getStorageTimestamp } from '@/lib/storage'
 
 export function StorageStatus() {
-  const [timestamp, setTimestamp] = useState<string | null>(null)
-  const [showSaved, setShowSaved] = useState(false)
+  const [timestamp] = useState(() => getStorageTimestamp())
+  const [showSaved, setShowSaved] = useState(true)
 
   useEffect(() => {
-    const ts = getStorageTimestamp()
-    setTimestamp(ts)
-
-    // Show saved indicator briefly
-    setShowSaved(true)
     const timer = setTimeout(() => setShowSaved(false), 2000)
     return () => clearTimeout(timer)
   }, [])

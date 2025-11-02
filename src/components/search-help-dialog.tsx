@@ -34,14 +34,14 @@ export function SearchHelpDialog() {
             <h4 className="mb-2 font-semibold">Simple Search</h4>
             <p className="mb-2 text-sm text-muted-foreground">Search across all columns:</p>
             <code className="mb-2 block rounded bg-muted p-2 text-xs">john</code>
-            <p className="text-xs text-muted-foreground">Finds "john" in any column</p>
+            <p className="text-xs text-muted-foreground">Finds &#34;john&#34; in any column</p>
           </div>
 
           <div>
             <h4 className="mb-2 font-semibold">Field-Specific Search</h4>
             <p className="mb-2 text-sm text-muted-foreground">Search in a specific column:</p>
             <code className="mb-2 block rounded bg-muted p-2 text-xs">name:john</code>
-            <p className="text-xs text-muted-foreground">Finds "john" only in the name column</p>
+            <p className="text-xs text-muted-foreground">Finds &#34;john&#34; only in the name column</p>
           </div>
 
           <div>
@@ -49,15 +49,15 @@ export function SearchHelpDialog() {
             <p className="mb-2 text-sm text-muted-foreground">Combine multiple field searches:</p>
             <code className="mb-2 block rounded bg-muted p-2 text-xs">name:john status:active</code>
             <p className="text-xs text-muted-foreground">
-              Finds rows where name contains "john" AND status contains "active"
+              Finds rows where name contains &#34;john&#34; AND status contains &#34;active&#34;
             </p>
           </div>
 
           <div>
             <h4 className="mb-2 font-semibold">Quoted Values</h4>
             <p className="mb-2 text-sm text-muted-foreground">Search for values with spaces:</p>
-            <code className="mb-2 block rounded bg-muted p-2 text-xs">name:"John Doe"</code>
-            <p className="text-xs text-muted-foreground">Finds "John Doe" as a complete phrase</p>
+            <code className="mb-2 block rounded bg-muted p-2 text-xs">name:&#34;John Doe&#34;</code>
+            <p className="text-xs text-muted-foreground">Finds &#34;John Doe&#34; as a complete phrase</p>
           </div>
 
           <div>
@@ -65,7 +65,7 @@ export function SearchHelpDialog() {
             <p className="mb-2 text-sm text-muted-foreground">Mix field and global searches:</p>
             <code className="mb-2 block rounded bg-muted p-2 text-xs">name:john active</code>
             <p className="text-xs text-muted-foreground">
-              Finds rows where name contains "john" AND any column contains "active"
+              Finds rows where name contains &#34;john&#34; AND any column contains &#34;active&#34;
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export function SearchHelpDialog() {
                 filters
               </li>
               <li>
-                • <code className="bg-muted px-1">city:"New York"</code> - Quoted values
+                • <code className="bg-muted px-1">city:&#34;New York&#34;</code> - Quoted values
               </li>
             </ul>
           </div>
