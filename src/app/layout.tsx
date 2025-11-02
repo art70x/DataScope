@@ -43,14 +43,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://datascope.vercel.app',
+    url: 'https://datascope0.vercel.app',
     siteName: 'DataScope',
     title: 'DataScope - Upload & Explore CSV & JSON Files',
     description:
       'Powerful data exploration tool for CSV and JSON files. Search, filter, sort, and export your data with ease.',
     images: [
       {
-        url: 'https://datascope.vercel.app/og-image.png',
+        url: 'https://datascope0.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'DataScope - Data Exploration Tool',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     description:
       'Powerful data exploration tool for CSV and JSON files. Search, filter, sort, and export your data with ease.',
     creator: '@art70x',
-    images: ['https://datascope.vercel.app/og-image.png'],
+    images: ['https://datascope0.vercel.app/og-image.png'],
   },
   robots: {
     index: true,
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://datascope.vercel.app',
+    canonical: 'https://datascope0.vercel.app',
   },
 }
 
