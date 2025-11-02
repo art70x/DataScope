@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import {ReactNode} from 'react'
+import { ReactNode } from 'react'
 import { Geist } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: ReactNode;
+  children: ReactNode
 }>) {
   return (
     <html lang="en">
@@ -113,5 +113,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
