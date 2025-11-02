@@ -1,0 +1,13 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "next.config.ts": "*.config.ts,prettier*,.editorconfig",
+      "package.json": "package-lock.json, pnpm*"
+    }
+  }
+  
