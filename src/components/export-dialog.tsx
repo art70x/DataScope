@@ -145,7 +145,10 @@ export function ExportDialog({ data, filteredRows, searchTerm }: ExportDialogPro
           {/* Format Selection */}
           <div className="space-y-2">
             <Label htmlFor="format">Export Format</Label>
-            <Select value={exportFormat} onValueChange={(value: Opts['formats']) => setExportFormat(value)}>
+            <Select
+              value={exportFormat}
+              onValueChange={(value: Opts['formats']) => setExportFormat(value)}
+            >
               <SelectTrigger id="format">
                 <SelectValue />
               </SelectTrigger>
@@ -162,7 +165,10 @@ export function ExportDialog({ data, filteredRows, searchTerm }: ExportDialogPro
             <>
               <div className="space-y-2">
                 <Label htmlFor="pageSize">Page Size</Label>
-                <Select value={pageSize} onValueChange={(value: Opts['size']) => setPageSize(value)}>
+                <Select
+                  value={pageSize}
+                  onValueChange={(value: Opts['size']) => setPageSize(value)}
+                >
                   <SelectTrigger id="pageSize">
                     <SelectValue />
                   </SelectTrigger>
@@ -175,7 +181,10 @@ export function ExportDialog({ data, filteredRows, searchTerm }: ExportDialogPro
 
               <div className="space-y-2">
                 <Label htmlFor="orientation">Orientation</Label>
-                <Select value={orientation} onValueChange={(value: Opts['orientation']) => setOrientation(value)}>
+                <Select
+                  value={orientation}
+                  onValueChange={(value: Opts['orientation']) => setOrientation(value)}
+                >
                   <SelectTrigger id="orientation">
                     <SelectValue />
                   </SelectTrigger>

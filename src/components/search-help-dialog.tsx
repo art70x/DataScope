@@ -41,7 +41,9 @@ export function SearchHelpDialog() {
             <h4 className="mb-2 font-semibold">Field-Specific Search</h4>
             <p className="mb-2 text-sm text-muted-foreground">Search in a specific column:</p>
             <code className="mb-2 block rounded bg-muted p-2 text-xs">name:john</code>
-            <p className="text-xs text-muted-foreground">Finds &#34;john&#34; only in the name column</p>
+            <p className="text-xs text-muted-foreground">
+              Finds &#34;john&#34; only in the name column
+            </p>
           </div>
 
           <div>
@@ -57,7 +59,9 @@ export function SearchHelpDialog() {
             <h4 className="mb-2 font-semibold">Quoted Values</h4>
             <p className="mb-2 text-sm text-muted-foreground">Search for values with spaces:</p>
             <code className="mb-2 block rounded bg-muted p-2 text-xs">name:&#34;John Doe&#34;</code>
-            <p className="text-xs text-muted-foreground">Finds &#34;John Doe&#34; as a complete phrase</p>
+            <p className="text-xs text-muted-foreground">
+              Finds &#34;John Doe&#34; as a complete phrase
+            </p>
           </div>
 
           <div>

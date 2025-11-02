@@ -13,7 +13,7 @@ export default async function Home() {
       </a>
 
       {/* Navbar */}
-      <Nav/>
+      <Nav />
 
       {/* Main Content */}
       <main id="main" className="flex-1 p-4 sm:p-8">
