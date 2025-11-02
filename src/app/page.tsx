@@ -1,4 +1,5 @@
 import { Nav } from '@/components/nav'
+import { DataExplorer } from '@/components/data-explorer'
 import { Footer } from '@/components/footer'
 
 export default async function Home() {
@@ -17,7 +18,7 @@ export default async function Home() {
       {/* Main Content */}
       <main id="main" className="flex-1 p-4 sm:p-8">
         <div className="mx-auto max-w-7xl">
-          <div></div>
+          <DataExplorer />
         </div>
       </main>
 
