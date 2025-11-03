@@ -21,14 +21,11 @@ export function Footer() {
           <div className="flex flex-col gap-3 sm:items-end">
             <p className="text-sm text-muted-foreground">
               Built by{' '}
-              <Link
-                href="https://x.com/art70x"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-foreground hover:underline"
+              <span
+                className="font-bold text-foreground"
               >
-                @art70x
-              </Link>
+                Art 70x
+              </span>
             </p>
             <div className="flex gap-3">
               <Link
@@ -39,7 +36,7 @@ export function Footer() {
                 aria-label="Follow on X"
               >
                 <Twitter className="h-4 w-4" />
-                <span className="hidden sm:inline">X</span>
+                <span className="hidden sm:inline">Twitter</span>
               </Link>
               <Link
                 href="https://github.com/art70x"
