@@ -20,12 +20,7 @@ export function Footer() {
           {/* Right side - Author info */}
           <div className="flex flex-col gap-3 sm:items-end">
             <p className="text-sm text-muted-foreground">
-              Built by{' '}
-              <span
-                className="font-bold text-foreground"
-              >
-                Art 70x
-              </span>
+              Built by <span className="font-bold text-foreground">Art 70x</span>
             </p>
             <div className="flex gap-3">
               <Link
