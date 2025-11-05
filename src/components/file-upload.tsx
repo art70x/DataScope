@@ -87,7 +87,7 @@ export function FileUpload({ onFileSelect, isLoading = false }: FileUploadProps)
         onDragOver={handleDrag}
         onDrop={handleDrop}
         onClick={handleClick}
-        className={`relative cursor-pointer rounded-lg border-2 border-dashed p-8 text-center tr-200 ${
+        className={`relative cursor-pointer rounded-lg border-2 border-dashed p-8 text-center transition duration-200 ${
           isDragActive
             ? 'border-primary bg-primary/5'
             : 'border-muted-foreground/25 hover:border-muted-foreground/50'

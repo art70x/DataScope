@@ -27,7 +27,7 @@ export function Footer() {
                 href="https://x.com/art70x"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground tr-240 hover:text-foreground"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground"
                 aria-label="Follow on X"
               >
                 <Twitter className="h-4 w-4" />
@@ -37,7 +37,7 @@ export function Footer() {
                 href="https://github.com/art70x"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground tr-240 hover:text-foreground"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground"
                 aria-label="GitHub profile"
               >
                 <Github className="h-4 w-4" />
